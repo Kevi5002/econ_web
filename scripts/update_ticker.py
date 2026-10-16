@@ -9,7 +9,7 @@ from pathlib import Path
 
 BASE = "https://api.api-ninjas.com"
 OUT = Path(__file__).resolve().parent.parent / "data" / "ticker.json"
-KEY = os.environ.get("API_NINJAS_KEY")
+KEY = os.environ.get("API_NINJAS_KEY_GDP")
 
 
 def get(path, **params):

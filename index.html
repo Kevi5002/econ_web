@@ -269,6 +269,28 @@
     <span>DePaul Blue · Navy · Gold · White</span>
   </div>
 </footer>
-
+<script>
+  // Live economic ticker: reads data/ticker.json (refreshed on a schedule by
+  // .github/workflows/update-ticker.yml). If anything fails, the hard-coded
+  // values in the markup above simply stay in place.
+  (function () {
+    var fmt = {
+      gdp_growth:   function (m) { return (m.value >= 0 ? "+" : "") + m.value.toFixed(1) + "% (" + m.year + ")"; },
+      unemployment: function (m) { return m.value.toFixed(1) + "% (" + m.year + ")"; },
+      cpi:          function (m) { return (m.value >= 0 ? "+" : "") + m.value.toFixed(1) + "%"; },
+      fed_funds:    function (m) { return m.value.toFixed(2) + "%"; }
+    };
+    fetch("data/ticker.json", { cache: "no-cache" })
+            .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+            .then(function (data) {
+              document.querySelectorAll("[data-metric]").forEach(function (el) {
+                var key = el.getAttribute("data-metric");
+                var m = data[key];
+                if (m && typeof m.value === "number" && fmt[key]) el.textContent = fmt[key](m);
+              });
+            })
+            .catch(function () { /* keep static fallback values */ });
+  })();
+</script>
 </body>
 </html>
