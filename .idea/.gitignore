@@ -9,4 +9,6 @@
 /dataSources/
 /dataSources.local.xml
 
-API_NINJAS_KEY =KDBnmHuoyjkJlzjxSo3i0meUkSXsy2ehhqABPe9D
+API_NINJAS_KEY_GDP=KDBnmHuoyjkJlzjxSo3i0meUkSXsy2ehhqABPe9D
+
+API_NINJAS_KEY_UNEMPLOYMENT=KDBnmHuoyjkJlzjxSo3i0meUkSXsy2ehhqABPe9D
