@@ -55,7 +55,7 @@ METRICS = {
 
 def main():
     if not KEY:
-        sys.exit("API_NINJAS_KEY is not set")
+        sys.exit("API_NINJAS_KEY_GDP is not set")
     data = json.loads(OUT.read_text()) if OUT.exists() else {}
     this_year = datetime.now(timezone.utc).year
     ok = 0
