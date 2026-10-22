@@ -15,6 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Fetch latest numbers
         env:
+          API_NINJAS_KEY: ${{ secrets.API_NINJAS_KEY_GDP }}
           API_NINJAS_KEY_GDP: ${{ secrets.API_NINJAS_KEY_GDP }}
         run: python3 scripts/update_ticker.py
       - name: Commit if changed
