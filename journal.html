@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Economics Journal — DePaul Economics Club</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economics Journal — DePaul Economics Club</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="images/econ_img.png" type="image/x-icon">
 </head>
-<link rel="shortcut icon" href="images/econ_img.png" type="image/x-icon">
 <body>
 
 <div class="utility-bar">
   <div class="wrap">
     <a href="mailto:depauleconomicsclub@gmail.com">depauleconomicsclub@gmail.com</a>
-    <div class="social-links"><a href="https://www.linkedin.com/in/depaul-economics-club-385585424/">LinkedIn</a><a href="https://www.instagram.com/dpueconomicsclub/">Instagram</a><a href="https://dehub.depaul.edu/feeds?type=club&type_id=35479&tab=about">DeHub</a></div>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/depaul-economics-club-385585424/">LinkedIn</a>
+      <a href="https://www.instagram.com/dpueconomicsclub/">Instagram</a>
+      <a href="https://dehub.depaul.edu/feeds?type=club&type_id=35479&tab=about">DeHub</a>
+    </div>
   </div>
 </div>
 
@@ -20,7 +24,10 @@
   <div class="wrap nav-row">
     <a class="brand" href="index.html">
       <img src="images/econ_img.png" alt="Economics Club Logo" class="brand-logo">
-      <div class="brand-text"><div class="name">Economics Club</div><div class="sub">DePaul University</div></div>
+      <div class="brand-text">
+        <div class="name">Economics Club</div>
+        <div class="sub">DePaul University</div>
+      </div>
     </a>
     <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')">Menu ≡</button>
     <nav class="main-nav">
@@ -51,35 +58,15 @@
 <section>
   <div class="wrap">
     <div class="section-head" style="max-width:none;">
-      <!-- <div class="eyebrow">Call for Papers</div> -->
       <h2>Our first issue is coming together now...</h2>
     </div>
-    <!-- <div class="grid grid-3">
-      <div class="card">
-        <div class="card-body">
-          <div class="meta">Journal/Article</div>
-          <h3>Have work on pricing, insurance, or access?</h3>
-          <p>We're looking for course projects or research tied to healthcare markets for our first issue.</p>
-          <a href="#submit" class="card-link">Submit your work</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <div class="meta">AI & Economics</div>
-          <h3>Studied automation or labor markets?</h3>
-          <p>We're looking for analysis on how AI and automation are reshaping work and policy.</p>
-          <a href="#submit" class="card-link">Submit your work</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <div class="meta">Public Policy</div>
-          <h3>Wrote a policy brief for class or Case Challenge?</h3>
-          <p>Case Challenge write-ups and policy briefs are a great fit for our first issue.</p>
-          <a href="#submit" class="card-link">Submit your work</a>
-        </div>
-      </div>
-    </div> -->
+
+    <!-- Uploaded journals will be injected here automatically via js/load_journals.js -->
+    <div id="journal-list"></div>
+
+    <!-- Include the script at the bottom of your body tag -->
+    <script src="js/load_journals.js"></script>
+
   </div>
 </section>
 
@@ -90,12 +77,11 @@
       <h2>The journal team</h2>
     </div>
     <div class="grid grid-4">
-       <div class="person">
+      <div class="person">
         <div class="photo"><img src="images/people/sophia.jpeg" alt="Sophia Sayed" style="width:100%;height:100%;object-fit:cover;"></div>
         <div class="info">
           <div class="role">Journal Team</div>
           <h3>Sophia Sayed</h3>
-          <!-- <p>Economics Student at DePaul University.</p> -->
           <div class="links"><a href="https://www.linkedin.com/in/sophiasayed/">LinkedIn</a></div>
         </div>
       </div>
@@ -103,8 +89,7 @@
         <div class="photo"><img src="images/people/madeline.jpeg" alt="Madeline Prosniewski" style="width:100%;height:100%;object-fit:cover;"></div>
         <div class="info">
           <div class="role">Journal Team</div>
-          <h3>Madeline Prosniewski </h3>
-          <!-- <p>Student at DePaul University.</p> -->
+          <h3>Madeline Prosniewski</h3>
           <div class="links"><a href="https://www.linkedin.com/in/madeline-prosniewski-69b84b21b/">LinkedIn</a></div>
         </div>
       </div>
@@ -114,86 +99,36 @@
           <div class="role">Faculty Advisor</div>
           <h3>Prof. Sabrina Young</h3>
           <div class="links"><a href="https://www.linkedin.com/in/sabrinakcg/">LinkedIn</a></div>
-          <!-- <p>Oversees the club's activities, events, research, and papers.</p> -->
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- <section class="alt">
-  <div class="wrap">
-    <div class="section-head" style="max-width:none;">
-      <div class="eyebrow">How It Works</div>
-      <h2>How Publishing Works</h2>
-    </div>
-    <ul class="process">
-      <li data-step="Step 1">
-        <h4>Submit</h4>
-        <p>Send your piece through the submission form below, any time during the quarter — a course project, research, an event recap, an internship reflection, whatever connects back to economics.</p>
-      </li>
-      <li data-step="Step 2">
-        <h4>Editorial support</h4>
-        <p>A student editor reads it over for clarity and makes sure your work is properly attributed to you.</p>
-      </li>
-      <li data-step="Step 3">
-        <h4>Polish</h4>
-        <p>You and your editor make any final tweaks together before it goes to print.</p>
-      </li>
-      <li data-step="Step 4">
-        <h4>Publish</h4>
-        <p>Your piece is typeset for the next issue, with your byline — ready to link on LinkedIn or add to your portfolio.</p>
-      </li>
-    </ul>
-  </div>
-</section> -->
-
-<!-- <section id="submit">
-  <div class="wrap grid grid-2" style="align-items:start;">
-    <div>
-      <div class="eyebrow">Submit Your Work</div>
-      <h2>Ready to share what you've been working on?</h2>
-      <p>We accept submissions on a rolling basis from any DePaul student — you don't need to be a club officer or economics major. Course projects, research papers, event recaps, internship reflections — if it connects back to economics, it belongs here. Our editors help you polish it and make sure it's properly credited to you, so it's ready to link on LinkedIn or add to your portfolio.</p>
-      <p style="margin-bottom:0;">Questions before submitting? Reach the journal team at <a href="mailto:journal@depaul.edu" style="color:var(--blue-bright); font-weight:600;">journal@depaul.edu</a>.</p>
-    </div>
-    <form class="form-panel" onsubmit="return false;">
-      <div class="field-row">
-        <div class="field"><label for="fname">First name</label><input id="fname" type="text" required></div>
-        <div class="field"><label for="lname">Last name</label><input id="lname" type="text" required></div>
-      </div>
-      <div class="field"><label for="jemail">Email</label><input id="jemail" type="email" required></div>
-      <div class="field"><label for="topic">Research area</label>
-        <select id="topic">
-          <option>Healthcare Economics</option>
-          <option>AI & Economics</option>
-          <option>Business Strategy</option>
-          <option>Public Policy</option>
-          <option>Behavioral Economics</option>
-          <option>STEAM</option>
-        </select>
-      </div>
-      <div class="field"><label for="abstract">Summary</label><textarea id="abstract" rows="4"></textarea></div>
-      <button type="submit" class="btn btn-navy">Submit for Review</button>
-    </form>
-  </div>
-</section> -->
-
 <footer class="site-footer">
   <div class="wrap footer-grid">
     <div class="footer-brand">
       <div class="brand" style="margin-bottom:14px;">
         <img src="images/econ_img.png" alt="Economics Club Logo" class="brand-logo">
-        <div class="brand-text"><div class="name" style="color:#fff;">Economics Club</div><div class="sub">DePaul University</div></div>
+        <div class="brand-text">
+          <div class="name" style="color:#fff;">Economics Club</div>
+          <div class="sub">DePaul University</div>
+        </div>
       </div>
       <p>Student-run since 2014. Research, networking, career, community.</p>
     </div>
-    <div><h4>Explore</h4><a href="about.html">About Us</a><a href="team.html">Meet the Team</a><a href="events.html">Events</a><a href="journal.html">Journal</a></div>
-    <div><h4>Get Involved</h4><a href="join.html">Join the Club</a><a href="research.html">Research Initiatives</a><a href="resources.html">Resources</a><a href="alumni.html">Alumni</a></div>
-    <div><h4>Connect</h4><a href="contact.html">Contact</a><a href="mailto:econclub@depaul.edu">econclub@depaul.edu</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div>
-  </div>
-  <div class="footer-bottom wrap">
-    <span>© 2026 DePaul Economics Club. All rights reserved.</span>
-    <span>DePaul Blue · Navy · Gold · White</span>
+    <div>
+      <h4>Explore</h4>
+      <a href="about.html">About Us</a>
+      <a href="team.html">Meet the Team</a>
+      <a href="events.html">Events</a>
+      <a href="journal.html">Journal</a>
+    </div>
+    <div>
+      <h4>Get Involved</h4>
+      <a href="join.html">Join the Club</a>
+      <a href="research.html">Research Initiatives</a>
+    </div>
   </div>
 </footer>
 
