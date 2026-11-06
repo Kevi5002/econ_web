@@ -1,0 +1,17 @@
+media:
+  input: images/journals     # Where uploaded PDFs or images will be saved
+  output: /images/journals
+
+collections:
+  - name: journals
+    label: Journals & Articles
+    folder: data/journals    # Where the text metadata will be saved
+    type: content
+    extension: json          # Saves data as easy-to-read JSON files
+    format: json
+    fields:
+      - { name: title, label: Article Title, type: string }
+      - { name: author, label: Author Name, type: string }
+      - { name: date, label: Publication Date, type: date }
+      - { name: summary, label: Short Summary, type: text }
+      - { name: file, label: Upload Journal PDF, type: file }
