@@ -7,5 +7,9 @@
     "value": 4.3,
     "year": 2026
   },
-  "updated": "2026-11-08T17:24:24Z"
+  "updated": "2026-11-09T21:45:27Z",
+  "fed_funds": {
+    "value": 4.0,
+    "last_updated": "09-17-2026"
+  }
 }
