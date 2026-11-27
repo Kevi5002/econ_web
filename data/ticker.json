@@ -7,9 +7,13 @@
     "value": 4.3,
     "year": 2026
   },
-  "updated": "2026-11-26T20:43:18Z",
+  "updated": "2026-11-27T18:56:37Z",
   "fed_funds": {
     "value": 4.0,
     "last_updated": "09-17-2026"
+  },
+  "cpi": {
+    "value": 3.7,
+    "period": "2026-09"
   }
 }
