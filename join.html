@@ -5,25 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Join the Club — DePaul Economics Club</title>
 <link rel="stylesheet" href="styles.css">
+<script src="js/script.js" defer></script>
 </head>
-<link rel="shortcut icon" href="images/econ_img.png" type="image/x-icon">
 <body>
 
 <div class="utility-bar">
   <div class="wrap">
     <a href="mailto:depauleconomicsclub@gmail.com">depauleconomicsclub@gmail.com</a>
-    <div class="social-links"><a href="https://www.linkedin.com/in/depaul-economics-club-385585424/">LinkedIn</a><a href="https://www.instagram.com/dpueconomicsclub/">Instagram</a><a href="https://dehub.depaul.edu/feeds?type=club&type_id=35479&tab=about">DeHub</a></div>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/depaul-economics-club-385585424/">LinkedIn</a>
+      <a href="https://www.instagram.com/dpueconomicsclub/">Instagram</a>
+      <a href="https://dehub.depaul.edu/feeds?type=club&amp;type_id=35479&amp;tab=about">DeHub</a>
+    </div>
   </div>
 </div>
 
 <header class="site-header">
   <div class="wrap nav-row">
     <a class="brand" href="index.html">
-      <img src="images/econ_img.png" alt="Economics Club Logo" class="brand-logo">
-      <div class="brand-text"><div class="name">Economics Club</div><div class="sub">DePaul University</div></div>
+      <img src="images/econ_img.png" alt="Economics Club Logo" class="brand-logo" width="60" height="60">
+      <div class="brand-text">
+        <div class="name">Economics Club</div>
+        <div class="sub">DePaul University</div>
+      </div>
     </a>
-    <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')">Menu ≡</button>
-    <nav class="main-nav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu ≡</button>
+    <nav class="main-nav" id="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -31,6 +38,7 @@
         <li><a href="events.html">Events</a></li>
         <li><a href="journal.html">Journal</a></li>
         <li><a href="research.html">Research</a></li>
+        <!--<li><a href="courses.html">Courses</a></li>-->
         <li><a href="resources.html">Resources</a></li>
         <li><a href="alumni.html">Alumni</a></li>
         <li><a href="join.html" aria-current="page">Join</a></li>
@@ -82,14 +90,35 @@
   <div class="wrap footer-grid">
     <div class="footer-brand">
       <div class="brand" style="margin-bottom:14px;">
-        <img src="images/econ_img.png" alt="Economics Club Logo" class="brand-logo">
-        <div class="brand-text"><div class="name" style="color:#fff;">Economics Club</div><div class="sub">DePaul University</div></div>
+        <img src="images/econ_img.png" alt="Economics Club Logo" class="brand-logo" width="60" height="60" loading="lazy">
+        <div class="brand-text">
+          <div class="name" style="color:#fff;">Economics Club</div>
+          <div class="sub">DePaul University</div>
+        </div>
       </div>
-      <p>Student-run since 2014. Research, networking, career, community.</p>
+      <p>Student-run since 2023. Research, networking, career, community.</p>
     </div>
-    <div><h4>Explore</h4><a href="about.html">About Us</a><a href="team.html">Meet the Team</a><a href="events.html">Events</a><a href="journal.html">Journal</a></div>
-    <div><h4>Get Involved</h4><a href="join.html">Join the Club</a><a href="research.html">Research Initiatives</a><a href="resources.html">Resources</a><a href="alumni.html">Alumni</a></div>
-    <div><h4>Connect</h4><a href="contact.html">Contact</a><a href="mailto:econclub@depaul.edu">econclub@depaul.edu</a><a href="https://www.linkedin.com/company/dePaul-economics-club">LinkedIn</a><a href="https://www.instagram.com/depaul_economics_club/">Instagram</a></div>
+    <div>
+      <h4>Explore</h4>
+      <a href="about.html">About Us</a>
+      <a href="team.html">Meet the Team</a>
+      <a href="events.html">Events</a>
+      <a href="journal.html">Journal</a>
+    </div>
+    <div>
+      <h4>Get Involved</h4>
+      <a href="join.html">Join the Club</a>
+      <a href="research.html">Research Initiatives</a>
+      <a href="resources.html">Resources</a>
+      <a href="alumni.html">Alumni</a>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <a href="contact.html">Contact</a>
+      <a href="mailto:depauleconomicsclub@gmail.com">depauleconomicsclub@gmail.com</a>
+      <a href="https://www.linkedin.com/in/depaul-economics-club-385585424/">LinkedIn</a>
+      <a href="https://www.instagram.com/dpueconomicsclub/">Instagram</a>
+    </div>
   </div>
   <div class="footer-bottom wrap">
     <span>© 2026 DePaul Economics Club. All rights reserved.</span>

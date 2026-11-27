@@ -383,7 +383,10 @@ footer.site-footer{ background:var(--navy); color:#C9D6E8; }
   .hero .wrap{ padding:70px 24px 56px; }
 }
 
-/* Simple nav-toggle interaction (no backend, just CSS-driven via checkbox trick fallback handled inline JS in each page) */
+/* Nav toggle behaviour lives in js/script.js */
+
+.person .photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+.journal-empty{ color:var(--ink-soft); }
 
 .brand-logo {
     width: 60px;
